@@ -20,7 +20,9 @@
     "namelist",
     "syntax",
     "highlighting",
-    "folding"
+    "folding",
+    "gene",
+    "parameters"
   ],
   "contributes": {
     "languages": [{
