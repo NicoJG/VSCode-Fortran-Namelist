@@ -26,14 +26,14 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "namelist",
-      "aliases": ["Fortran Namelist", "namelist"],
+      "id": "fortran-namelist",
+      "aliases": ["Fortran Namelist", "fortran-namelist"],
       "extensions": [".nml", ".namelist"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "namelist",
-      "scopeName": "source.namelist",
+      "language": "fortran-namelist",
+      "scopeName": "source.fortran-namelist",
       "path": "./syntaxes/Fortran-Namelist.tmLanguage.json"
     }]
   }

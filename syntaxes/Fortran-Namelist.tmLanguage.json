@@ -1,6 +1,6 @@
 {
   "name": "Fortran Namelist",
-  "scopeName": "source.namelist",
+  "scopeName": "source.fortran-namelist",
   "fileTypes": ["nml", "namelist"],
   "patterns": [
     {
@@ -46,15 +46,17 @@
       ]
     },
     {
-      "name": "constant.language.boolean.namelist",
+      "name": "keyword.boolean.namelist",
       "match": "\\.(true|false|t|f)\\.|\\b[TF]\\b",
       "flags": "i"
+    },
+    {
+      "name": "string.regexp.gene_scan.namelist",
+      "match": "!\\s*(scan|replace)\\w*\\b.*$"
     },
     {
       "name": "comment.line.exclamation.namelist",
       "match": "!.*$"
     }
-  ],
-  "repository": {},
-  "uuid": "eb1e470c-0dc7-42e5-b6b7-1e290dab8510"
+  ]
 }

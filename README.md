@@ -1,6 +1,6 @@
 # Fortran Namelist Syntax Highlighting
 
-VS Code extension for syntax highlighting and folding in Fortran Namelist (`.nml`, `.namelist`) files.
+VS Code extension for syntax highlighting in Fortran Namelist (`.nml`, `.namelist`) files.
 
 My personal use case: Parameter files for the [GENE Code](https://genecode.org/)
 
@@ -19,6 +19,14 @@ git clone https://github.com/NicoJG/VSCode-Fortran-Namelist.git ~/.vscode/extens
 ```
 
 Then restart VS Code.
+
+Optional tip: If you want to highlight this syntax in other files you can either select it on the bottom right of VSCode or add the following in your VSCode `settings.json` :
+```json
+"files.associations": {
+	"<file-pattern>": "fortran-namelist",
+},
+```
+For example, for parameter files in GENE I use `parameters*` as `<file-pattern>`.
 
 ## Issues
 
