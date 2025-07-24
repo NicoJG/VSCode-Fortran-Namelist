@@ -1,0 +1,60 @@
+{
+  "name": "Fortran Namelist",
+  "scopeName": "source.namelist",
+  "fileTypes": ["nml", "namelist"],
+  "patterns": [
+    {
+      "name": "keyword.control.namelist",
+      "match": "^\\s*&\\w+"
+    },
+    {
+      "name": "keyword.control.end.namelist",
+      "match": "^\\s*/\\s*$"
+    },
+    {
+      "name": "variable.assignment.namelist",
+      "match": "\\w+(?=\\s*=)"
+    },
+    {
+      "name": "keyword.operator.assignment.namelist",
+      "match": "="
+    },
+    {
+      "name": "constant.numeric.namelist",
+      "match": "[-+]?(?:\\d*\\.\\d+|\\d+)(?:[eEdD][-+]?\\d+)?"
+    },
+    {
+      "name": "string.quoted.double.namelist",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.namelist",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "string.quoted.single.namelist",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.namelist",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "constant.language.boolean.namelist",
+      "match": "\\.(true|false|t|f)\\.|\\b[TF]\\b",
+      "flags": "i"
+    },
+    {
+      "name": "comment.line.exclamation.namelist",
+      "match": "!.*$"
+    }
+  ],
+  "repository": {},
+  "uuid": "eb1e470c-0dc7-42e5-b6b7-1e290dab8510"
+}

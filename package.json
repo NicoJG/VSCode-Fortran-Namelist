@@ -1,0 +1,27 @@
+{
+  "name": "fortran-namelist",
+  "displayName": "Fortran Namelist Syntax Highlighting",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "namelist",
+      "aliases": ["Fortran Namelist", "namelist"],
+      "extensions": [".nml",".namelist"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "namelist",
+      "scopeName": "source.namelist",
+      "path": "./syntaxes/Fortran-Namelist.tmLanguage.json",
+      "foldingStartMarker": "^\\s*&\\w+",
+      "foldingStopMarker": "^\\s*/\\s*$"
+    }]
+  }
+}
