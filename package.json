@@ -3,10 +3,10 @@
   "displayName": "Fortran Namelist Syntax Highlighting",
   "description": "Syntax highlighting for Fortran Namelist (.nml, .namelist) files.",
   "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "publisher": "NicoJG",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/VSCode-Fortran-Namelist-Syntax.git"
+    "url": "https://github.com/NicoJG/VSCode-Fortran-Namelist.git"
   },
   "license": "MIT",
   "engines": {
