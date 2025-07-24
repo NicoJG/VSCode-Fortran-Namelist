@@ -12,7 +12,13 @@ My personal use case: Parameter files for the [GENE Code](https://genecode.org/)
 
 ## Usage
 
-Just install and open your Fortran Namelist files—no configuration needed.
+Just clone or download this repository and copy the folder into your VS Code extensions directory:
+
+```sh
+git clone https://github.com/NicoJG/VSCode-Fortran-Namelist.git ~/.vscode/extensions/fortran-namelist
+```
+
+Then restart VS Code.
 
 ## Issues
 
