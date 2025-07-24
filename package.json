@@ -2,7 +2,7 @@
   "name": "fortran-namelist",
   "displayName": "Fortran Namelist Syntax Highlighting",
   "description": "Syntax highlighting for Fortran Namelist (.nml, .namelist) files.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "NicoJG",
   "repository": {
     "type": "git",
@@ -25,16 +25,26 @@
     "parameters"
   ],
   "contributes": {
-    "languages": [{
-      "id": "fortran-namelist",
-      "aliases": ["Fortran Namelist", "fortran-namelist"],
-      "extensions": [".nml", ".namelist"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "fortran-namelist",
-      "scopeName": "source.fortran-namelist",
-      "path": "./syntaxes/Fortran-Namelist.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "fortran-namelist",
+        "aliases": [
+          "Fortran Namelist",
+          "fortran-namelist"
+        ],
+        "extensions": [
+          ".nml",
+          ".namelist"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "fortran-namelist",
+        "scopeName": "source.fortran-namelist",
+        "path": "./syntaxes/Fortran-Namelist.tmLanguage.json"
+      }
+    ]
   }
 }
