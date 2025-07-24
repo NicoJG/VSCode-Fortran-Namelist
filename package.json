@@ -1,27 +1,38 @@
 {
   "name": "fortran-namelist",
   "displayName": "Fortran Namelist Syntax Highlighting",
-  "description": "",
+  "description": "Syntax highlighting for Fortran Namelist (.nml, .namelist) files.",
   "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/VSCode-Fortran-Namelist-Syntax.git"
+  },
+  "license": "MIT",
   "engines": {
-    "vscode": "^1.102.0"
+    "vscode": "^1.50.0"
   },
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "fortran",
+    "namelist",
+    "syntax",
+    "highlighting",
+    "folding"
   ],
   "contributes": {
     "languages": [{
       "id": "namelist",
       "aliases": ["Fortran Namelist", "namelist"],
-      "extensions": [".nml",".namelist"],
+      "extensions": [".nml", ".namelist"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
       "language": "namelist",
       "scopeName": "source.namelist",
-      "path": "./syntaxes/Fortran-Namelist.tmLanguage.json",
-      "foldingStartMarker": "^\\s*&\\w+",
-      "foldingStopMarker": "^\\s*/\\s*$"
+      "path": "./syntaxes/Fortran-Namelist.tmLanguage.json"
     }]
   }
 }
