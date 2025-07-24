@@ -30,4 +30,4 @@ For example, for parameter files in GENE I use `parameters*` as `<file-pattern>`
 
 ## Issues
 
-Report bugs or suggestions
+Report bugs or suggestions on GitHub: https://github.com/NicoJG/VSCode-Fortran-Namelist
